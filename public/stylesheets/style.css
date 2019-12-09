@@ -1,0 +1,41 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.div-table {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    background-color: #eee;
+    border: 1px solid #666666;
+    border-spacing: 5px;/*cellspacing:poor IE support for  this*/
+    /* border-collapse:separate;*/
+}
+.div-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex: 1 0 auto;
+    width: 100%;
+    border-bottom: 1px solid rgba(200,200,200,0.5);
+}
+.header-row {
+    font-weight: bold;
+}
+
+.div-cell {
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    padding-left: 10px;
+    overflow-x: auto;
+}

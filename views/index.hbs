@@ -1,0 +1,34 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<form action="/" method="post">
+    <input type="text" id="repo_url" name="repo_url">
+    <input type="submit" value="Get Pull Requests" id="edit" />
+
+    <div class="div-table" class="form-control">
+        <div class="div-row header-row">
+            <div class="div-cell">Open PRs</div>
+            <div class="div-cell">Commits</div>
+            <div class="div-cell">Comments</div>
+            <div class="div-cell">User</div>
+        </div>
+    </div>
+
+    <div>
+        {{#if this.error}}
+        <div>{{this.error}}</div>
+        {{/if}}
+
+        {{#if this.pulls}}
+        {{#each pulls}}
+        <div class="div-row">
+            <div class="div-cell">{{this.title}}<br>#{{this.number}}-{{this.state}}</div>
+            <div class="div-cell">{{this.commits_count}}</div>
+            <div class="div-cell">{{this.review_comments_count}}</div>
+            <div class="div-cell">{{this.login}}</div>
+        </div>
+        {{/each}}
+        {{/if}}
+    </div>
+
+</form>

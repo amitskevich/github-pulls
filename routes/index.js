@@ -42,6 +42,7 @@ router.post('/', async (req, res) => {
                 let pulls = [];
                 Promise.all(promisses)
                     .then(response => {
+                        let item;
                         response.forEach(result => {
                             item = result.data;
                             pulls.push({

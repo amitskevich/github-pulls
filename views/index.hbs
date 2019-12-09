@@ -1,8 +1,9 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>GitHub Repo Viewer</h1>
+
 
 <form action="/" method="post">
-    <input type="text" id="repo_url" name="repo_url">
+    <label>Enter Url</label>
+    <input type="text" id="repo_url" name="repo_url" class="url">
     <input type="submit" value="Get Pull Requests" id="edit" />
 
     <div class="div-table" class="form-control">
@@ -30,5 +31,4 @@
         {{/each}}
         {{/if}}
     </div>
-
 </form>

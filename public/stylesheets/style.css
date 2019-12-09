@@ -7,14 +7,17 @@ a {
   color: #00B7FF;
 }
 
+.url {
+    width:20em;
+}
 .div-table {
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
     background-color: #eee;
     border: 1px solid #666666;
-    border-spacing: 5px;/*cellspacing:poor IE support for  this*/
-    /* border-collapse:separate;*/
+    border-spacing: 5px;
+    margin-top: 10px;
 }
 .div-row {
     display: flex;

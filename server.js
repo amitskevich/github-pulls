@@ -1,7 +1,6 @@
 const app = require('./app');
 
 //set the api port
-app.set('port', 3000);
+app.set('port', 3003);
 
-app.listen(app.get('port'), () => {
-});
+app.listen(app.get('port'), () => {});
